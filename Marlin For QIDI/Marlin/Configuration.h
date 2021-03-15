@@ -741,14 +741,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 94.12, 94.12, 400, 415 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 25, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 150, 150, 25, 50 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1122,8 +1122,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 340
-#define Y_BED_SIZE 192
+#define X_BED_SIZE 292
+#define Y_BED_SIZE 165
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
